@@ -11,7 +11,7 @@ connectDB();
 const destroyData = async () => {
   try {
     await User.deleteMany();
-
+    await Job.deleteMany();
     console.log("Data Destroyed!");
     process.exit();
   } catch (error) {
